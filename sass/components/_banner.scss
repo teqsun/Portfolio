@@ -1,0 +1,45 @@
+.banner {
+	height: 590px;
+    min-height: 590px;
+    background-color: blue;
+    padding: 7em 9em 5em 5em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    max-width: 1400px;
+}
+
+#bandeau_horizontal { 
+    position:relative;
+    width:100%;
+    height:300px;
+    border:1px solid black;
+    overflow:hidden;
+    float: left;
+    margin-right: 10px;
+    margin-top:  55px;
+  }
+
+.format-banner {
+    position:relative;
+    border:1px;width:600px;
+    height:150px solid black;
+    overflow:hidden;
+}
+/*
+var longueurDeplacement = 10;
+
+var vitesseDeplacement = 50;
+
+function defileBanniere(ban) {
+b = document.getElementById(ban);
+bn = b.childNodes;
+
+for(var n =1;n >-1;n--)
+{
+if(bn[n].offsetLeft+bn[n].offsetWidth<0)bn[n].style.left= bn[(n0?1 : 0)].offsetLeft+ bn[n].offsetWidth+"px";
+bn[n].style.left= bn[n].offsetLeft- longueurDeplacement+"px";
+}
+setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
+} */

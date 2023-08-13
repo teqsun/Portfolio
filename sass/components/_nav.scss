@@ -1,0 +1,39 @@
+.logo-container {
+    width: 60px;
+    cursor: pointer;
+    
+}
+
+.b-radius {
+    border-radius: 50px;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 35px;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(120, 120, 129, 0.1019607843) 0px 3px 3px 3px;
+    height: 65px;
+    max-height: 65px;
+}
+
+.nav-lien {
+display: flex;
+}
+
+.nav-format {
+    font-size: 14px;
+	margin-left: 30px;
+	//color: $primary-color;
+	font-weight: 500;
+	cursor: pointer;
+
+	&:hover {
+		color: yellow;
+	}
+}
