@@ -4,11 +4,29 @@ img {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
 }
 
 .logo-container {
   width: 60px;
   cursor: pointer;
+}
+
+.flex-nav {
+  width: 100%;
 }
 
 .b-radius {
@@ -19,7 +37,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 35px;
+  padding: 5px 15px;
   z-index: 1000;
   position: fixed;
   top: 0px;
@@ -32,6 +50,9 @@ ul {
 
 .nav-lien {
   display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .nav-format {
@@ -47,8 +68,6 @@ ul {
 .footer-format {
   background-color: purple;
   padding: 20px 0;
-  bottom: 0;
-  position: absolute;
   width: 100%;
   height: 80px;
 }
@@ -73,25 +92,33 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 55px;
-  max-width: 1400px;
+  max-width: 1200px;
+}
+
+.small-profil {
+  border-radius: 50%;
 }
 
 #bandeau_horizontal {
+  display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 300px;
+  min-height: 300px;
   border: 1px solid black;
   overflow: hidden;
-  float: left;
-  margin-right: 10px;
   margin-top: 55px;
 }
 
 .format-banner {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   border: 1px;
-  width: 600px;
-  height: 150px solid black;
   overflow: hidden;
 }
 
@@ -111,5 +138,163 @@ bn[n].style.left= bn[n].offsetLeft- longueurDeplacement+"px";
 }
 setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
 } */
+.media-format {
+  border: 1.5px solid #222288;
+  width: 38px;
+  height: 38px;
+  margin-right: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.media-format:hover {
+  background-color: #69699c;
+}
+.media-format:hover .icone-format {
+  color: #dbdbe7;
+}
+
+.bloc-media {
+  display: flex;
+  justify-content: center;
+}
+
+.icone-format {
+  border-radius: 50%;
+}
+
+.a-propos {
+  background-color: aquamarine;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.mes-travaux {
+  background-color: rgb(127, 157, 255);
+  height: 500px;
+}
+
+.mes-competences {
+  background-color: #C8DDFB;
+}
+
+.contact {
+  background-color: rgb(27, 52, 136);
+  height: 500px;
+}
+
+.card-service {
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px 0 rgba(104, 104, 133, 0.288);
+  border-radius: 12px;
+  text-align: center;
+  padding: 50px 15px 0 15px;
+  position: relative;
+  height: 310px;
+}
+
+.skill-format-box {
+  width: 30%;
+}
+
+.icone-skill-color {
+  color: #ffffff;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title-skill {
+  margin-bottom: 75px;
+}
+
+.bloc-skill {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.rond-card-service.rond-softskill {
+  background-color: #549AF4;
+}
+
+.btn-cv {
+  background-color: #222288;
+  color: white;
+  padding: 0.625rem 1.375rem;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 50px;
+  margin-top: 0.7em;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  width: fit-content;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.margin-btn-cv {
+  margin: 50px auto 0;
+}
+
+.rond-card-service.rond-illuskill {
+  background-color: #B61679;
+}
+
+.rond-card-service {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: #316EE1;
+  position: absolute;
+  top: 0em;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-card-service {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.p-margin-bottom {
+  margin-bottom: 10px;
+}
+
+.list-skills {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.items-skill {
+  background-color: #fff;
+  border: 1.5px solid #549AF6;
+  color: #549AF6;
+  padding: 0.3125rem 1rem 0.25rem;
+  margin-right: 6px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.title-card-rond {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=styles.css.map */

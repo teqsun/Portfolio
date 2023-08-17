@@ -1,0 +1,127 @@
+.card-service {
+	background-color: #ffffff;
+	//width: 29%;
+	box-shadow: 0 5px 20px 0 rgba(104, 104, 133, 0.288);
+	border-radius: 12px;
+	text-align: center;
+	padding: 50px 15px 0 15px;
+	position: relative;
+	height: 310px;
+}
+
+.skill-format-box{
+    width: 30%;
+}
+.icone-skill-color  {
+    color: #ffffff;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title-skill{
+    margin-bottom: 75px;
+}
+
+.bloc-skill {
+  //  max-width: 1200px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.rond-card-service.rond-softskill{
+  background-color:   #549AF4;
+}
+
+.btn-cv{
+    background-color: #222288;
+    color: white;
+    padding: 0.625rem 1.375rem;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 50px;
+    margin-top: 0.7em;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    width: fit-content;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.margin-btn-cv{
+    margin: 50px auto 0;
+}
+
+.rond-card-service.rond-illuskill{
+    background-color:   #B61679;
+  }
+
+.rond-card-service {
+	transform: translate(-50%, -50%);
+	left: 50%;
+    background-color: #316EE1;
+	position: absolute;
+	top: 0em;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	padding: 1.7em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-card-service{
+	font-size: 1.5em;
+//	color: $primary-color;
+	font-weight: 600;
+	
+}
+
+.p-margin-bottom {
+	margin-bottom: 10px;
+} 
+
+.list-skills{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.items-skill{
+    background-color: #fff;
+    border: 1.5px solid #549AF6;
+    color: #549AF6;
+    padding: 0.3125rem 1rem 0.25rem;
+    margin-right: 6px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.title-card-rond {
+	font-size: 1.1em;
+	//color: $primary-color;
+	margin-bottom: 10px;
+	font-weight: 500;
+//	color: $primary-color;
+
+}
+
+.card-rond-webdev {
+	//background-color: $primary-color;
+}
+
+.card-rond-webdesign {
+	//background-color: $violet;
+}
+
+.card-rond-illu {
+	//background-color: $pink;
+}
