@@ -1,4 +1,6 @@
-<?php if (isset($_POST['sendmail'])){
+<?php 
+/*
+if (isset($_POST['sendmail'])){
             
             $lastName = htmlspecialchars($_POST['lastname']);
             $firstName = htmlspecialchars($_POST['firstname']);
@@ -20,9 +22,33 @@
                 return $message;
             }
     
-           // header('Location: https://agathe-plunian.com/');
+           header('Location: ./index.html');
             
         }
-        ?>
+
+        */
+        if (isset($_POST['submit'])){
+$name = $_POST['name'];
+$visitor_mail = $_POST['email'];
+$message = $_POST['message'];
+
+$email_from ='teqsun614@gmail.com';
+$email_subject ="New form Submission";
+$email_body = "User Name: $name.\n". 
+                "User Email: $visitor_email.\n". 
+                    "User Message: $message.\n";
+
+            $to ="yohan.violes@gmail.com";
+
+            $headers = "From : $email_from \r\n";
+            $headers .="Reply-To: $visitor_email \r\n";
+
+            mail($to,$email_subject,$email_body,$headers);
+
+
+
+            header('Location: ../index.html');
+        }
+?>
 
      

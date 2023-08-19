@@ -74,9 +74,12 @@
 
         <figure class="portfolio-item">
             <img src="/img/portfolio/booki-card.png" alt="portfolio-booki">
-            <figcaption>
+            <figcaption >
+                <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Booki</h2>
-                <a href="#" class="portfolio-link">En savoir plus</a>
+                <p>En savoir plus</p>
+                </a>
+
             </figcaption>
 
                 <div class="portfolio-modal">
@@ -219,7 +222,7 @@
 
     <section class="contact">
 
-
+<!--
         <?php if (($_SERVER["REQUEST_METHOD"] == "POST")) {
 
             $headers = "MIME-Version: 1.0" . "\r\n";
@@ -244,8 +247,7 @@
             }
         }
         ?>
-
-        <div>
+         <div>
             <form class="formulaire" action="#contact" method="post" id="form" name="sendmail" onsubmit="return validate(event);">
 
                 <div class="names-input">
@@ -274,6 +276,20 @@
 
                 <button id="submit-message-form" name="sendmail" value="sendmail" class="submit-message" type="submit">Envoyer mon message</button>
             </form>
+        </div>
+-->
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="php/form.php">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Your mail" required>
+                <br>
+                <textarea name="name" type="text" class="form-control" placeholder="Votre message" required>
+                </textarea><br>
+
+                <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>
+           
         </div>
     </section>
 

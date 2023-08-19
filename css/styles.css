@@ -404,35 +404,51 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
 }
 
 .portfolio-item {
+  border-radius: 25px;
   position: relative;
   overflow: hidden;
   width: 50%;
 }
 .portfolio-item figcaption {
   position: absolute;
-  top: 0;
+  top: 100%;
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 2em;
+  padding-left: 0;
   background: rgba(84, 154, 244, 0.5);
   color: white;
   display: flex;
   text-align: left;
   flex-direction: column;
+  transition: top ease-in-out 350ms;
+}
+.portfolio-item:focus figcaption, .portfolio-item:hover figcaption {
+  cursor: pointer;
+  top: 0;
 }
 
 .portfolio-link {
+  height: 100%;
+  width: 100%;
+  padding: 2em;
   color: white;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1em;
   text-decoration: none;
+  align-self: flex-start;
+  /*
+  	&::after {
+  		content: url(../../img/icone/f-b.png);
+  		display: inline-block;
+  		height: 1em;
+  		width: 1em;
+  	} */
 }
-.portfolio-link::after {
-  content: url(../../img/icone/NicePng.png);
-  display: inline-block;
-  height: 1em;
-  width: 1em;
+
+.flex-beetween {
+  display: flex;
+  align-items: space-beewteen;
 }
 
 .portfolio-modal {
@@ -534,6 +550,23 @@ figcaption h2 {
 .modal-close:hover {
   background-color: #222288;
   opacity: 0.9;
+}
+
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes modalOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

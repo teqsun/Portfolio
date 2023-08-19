@@ -97,36 +97,53 @@
 }
 
 .portfolio-item {
+	border-radius: 25px;
 position: relative;
 overflow: hidden;
 width: 50%;
  figcaption {
 	position: absolute;
-	top: 0;
+	top: 100%;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	padding: 2em;
+	
+	padding-left: 0;
 	background:  rgba( #549AF4, .5);
 	color: white;
 	display: flex;
 	text-align: left;
 	flex-direction: column;
+	transition: top ease-in-out 350ms;
+ }
+ &:focus figcaption,
+ &:hover figcaption{
+	cursor: pointer;
+	top: 0;
  }
 }
 
 .portfolio-link {
+	height: 100%;
+	width: 100%;
+	padding: 2em;
 	color: white;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 1em;
 	text-decoration: none;
-
-	&::after{
-		content: url(../../img/icone/NicePng.png);
+	align-self: flex-start;
+/*
+	&::after {
+		content: url(../../img/icone/f-b.png);
 		display: inline-block;
 		height: 1em;
 		width: 1em;
-	}
+	} */
+}
+
+.flex-beetween{
+	display: flex;
+	align-items: space-beewteen;
 }
 
 .portfolio-modal{
@@ -200,7 +217,7 @@ figcaption h2 {
 
 .grid-portfolio{
 	display: flex;
-justify-content: space-between;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
@@ -233,4 +250,13 @@ justify-content: space-between;
 		background-color: #222288;;
 		opacity: 0.9;
 	}
+}
+
+@keyframes modalIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes modalOut{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
 }
