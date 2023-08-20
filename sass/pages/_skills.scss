@@ -6,7 +6,7 @@
 	text-align: center;
 	padding: 50px 15px 0 15px;
 	position: relative;
-	height: 310px;
+	height: 350px;
 }
 
 .skill-format-box{
@@ -35,7 +35,7 @@
 }
 
 .btn-cv{
-    background-color: #222288;
+    background-color: #846add;
     color: white;
     padding: 0.625rem 1.375rem;
     font-size: 1.125rem;
@@ -49,6 +49,9 @@
     transition: 0.3s;
     cursor: pointer;
     font-weight: 500;
+    &:hover{
+        background-color: #5f38df;
+    }
 
 }
 
@@ -95,8 +98,8 @@
 
 .items-skill{
     background-color: #fff;
-    border: 1.5px solid #549AF6;
-    color: #549AF6;
+    border: 1.5px solid #846add;
+    color: #846add;
     padding: 0.3125rem 1rem 0.25rem;
     margin-right: 6px;
     border-radius: 15px;
@@ -109,7 +112,7 @@
 	font-size: 1.1em;
 	//color: $primary-color;
 	margin-bottom: 10px;
-	font-weight: 500;
+	
 //	color: $primary-color;
 
 }

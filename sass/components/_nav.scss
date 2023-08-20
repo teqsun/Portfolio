@@ -29,8 +29,9 @@
 .nav-lien {
 display: flex;
 margin: 0;
-    padding: 0;
+    padding: 11px 28px;
     border: 0;
+    
 }
 
 .nav-format {
@@ -41,6 +42,24 @@ margin: 0;
 	cursor: pointer;
 
 	&:hover {
-		color: yellow;
+		color: #846add;
 	}
+}
+
+.nav-format a{
+
+    text-decoration:none;
+    color: black;
+     
+}
+
+html{
+    scroll-behavior: smooth; 
+   
+}
+
+
+#contact,#skills,#mes-travaux,#a-propos {
+    scroll-margin-top: 60px;
+     scroll-behavior: smooth; 
 }

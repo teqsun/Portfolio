@@ -13,6 +13,8 @@
 
 .small-profil{
     border-radius: 50%;
+    height: 148px;
+    width: 148px;
 }
 
 #bandeau_horizontal { 
@@ -42,19 +44,6 @@
     
     overflow:hidden;
 }
-/*
-var longueurDeplacement = 10;
 
-var vitesseDeplacement = 50;
 
-function defileBanniere(ban) {
-b = document.getElementById(ban);
-bn = b.childNodes;
 
-for(var n =1;n >-1;n--)
-{
-if(bn[n].offsetLeft+bn[n].offsetWidth<0)bn[n].style.left= bn[(n0?1 : 0)].offsetLeft+ bn[n].offsetWidth+"px";
-bn[n].style.left= bn[n].offsetLeft- longueurDeplacement+"px";
-}
-setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
-} */

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 img {
   width: 100%;
 }
@@ -18,6 +22,31 @@ body {
 h2 {
   display: flex;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+a, p, li, label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .logo-container {
@@ -51,7 +80,7 @@ h2 {
 .nav-lien {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 11px 28px;
   border: 0;
 }
 
@@ -62,11 +91,25 @@ h2 {
   cursor: pointer;
 }
 .nav-format:hover {
-  color: yellow;
+  color: #846add;
+}
+
+.nav-format a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contact, #skills, #mes-travaux, #a-propos {
+  scroll-margin-top: 60px;
+  scroll-behavior: smooth;
 }
 
 .footer-format {
-  background-color: purple;
+  background-color: #E8E8E8;
   padding: 20px 0;
   width: 100%;
   height: 80px;
@@ -97,6 +140,8 @@ h2 {
 
 .small-profil {
   border-radius: 50%;
+  height: 148px;
+  width: 148px;
 }
 
 #bandeau_horizontal {
@@ -122,22 +167,6 @@ h2 {
   overflow: hidden;
 }
 
-/*
-var longueurDeplacement = 10;
-
-var vitesseDeplacement = 50;
-
-function defileBanniere(ban) {
-b = document.getElementById(ban);
-bn = b.childNodes;
-
-for(var n =1;n >-1;n--)
-{
-if(bn[n].offsetLeft+bn[n].offsetWidth<0)bn[n].style.left= bn[(n0?1 : 0)].offsetLeft+ bn[n].offsetWidth+"px";
-bn[n].style.left= bn[n].offsetLeft- longueurDeplacement+"px";
-}
-setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
-} */
 .media-format {
   border: 1.5px solid #222288;
   width: 38px;
@@ -165,24 +194,121 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
   border-radius: 50%;
 }
 
+.contact-form {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(132, 106, 221, 0.9);
+}
+
+.bloc-form {
+  width: 1163px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 110px 130px 157px 148px;
+}
+
+.btn-send {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.btn-send-design {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #846add;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  cursor: pointer;
+  border: 0;
+}
+
+.form-format {
+  width: 390px;
+  box-sizing: border-box;
+  padding-top: 35px;
+}
+
+.input-design {
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+}
+
+input.input-design {
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+  padding-left: 30px;
+  border: 0;
+}
+
+.title-form {
+  display: block;
+  font-size: 24px;
+  color: #333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 36px;
+}
+
+textarea.input-design {
+  min-height: 150px;
+  border-radius: 25px;
+  padding: 14px 30px;
+  border: 0;
+  outline: none;
+}
+
+.mail-style {
+  will-change: transform;
+  transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+}
+
+.logo-mail {
+  width: 330px;
+  vertical-align: middle;
+  border-style: none;
+}
+
 .a-propos {
-  background-color: aquamarine;
-  height: 500px;
+  background-color: rgba(132, 106, 221, 0.9);
+  flex-direction: column;
   display: flex;
   justify-content: center;
 }
 
 .mes-travaux {
-  background-color: rgb(127, 157, 255);
+  background-color: #F5F5F5;
 }
 
 .mes-competences {
-  background-color: #C8DDFB;
+  background-color: #E8E8E8;
 }
 
 .contact {
   background-color: rgb(27, 52, 136);
-  height: 500px;
 }
 
 .card-service {
@@ -192,7 +318,7 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
   text-align: center;
   padding: 50px 15px 0 15px;
   position: relative;
-  height: 310px;
+  height: 350px;
 }
 
 .skill-format-box {
@@ -223,7 +349,7 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
 }
 
 .btn-cv {
-  background-color: #222288;
+  background-color: #846add;
   color: white;
   padding: 0.625rem 1.375rem;
   font-size: 1.125rem;
@@ -237,6 +363,9 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
   transition: 0.3s;
   cursor: pointer;
   font-weight: 500;
+}
+.btn-cv:hover {
+  background-color: #5f38df;
 }
 
 .margin-btn-cv {
@@ -280,8 +409,8 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
 
 .items-skill {
   background-color: #fff;
-  border: 1.5px solid #549AF6;
-  color: #549AF6;
+  border: 1.5px solid #846add;
+  color: #846add;
   padding: 0.3125rem 1rem 0.25rem;
   margin-right: 6px;
   border-radius: 15px;
@@ -293,7 +422,6 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
 .title-card-rond {
   font-size: 1.1em;
   margin-bottom: 10px;
-  font-weight: 500;
 }
 
 @keyframes fadeOut {
@@ -407,25 +535,27 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
   border-radius: 25px;
   position: relative;
   overflow: hidden;
-  width: 50%;
+  width: 45%;
+  box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
+  margin: 1.1em 1.7em;
 }
 .portfolio-item figcaption {
   position: absolute;
-  top: 100%;
+  top: 0;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 100%;
   padding-left: 0;
-  background: rgba(84, 154, 244, 0.5);
+  background: rgba(132, 106, 221, 0.8);
   color: white;
   display: flex;
   text-align: left;
   flex-direction: column;
-  transition: top ease-in-out 350ms;
+  transition: left ease-in-out 350ms;
 }
 .portfolio-item:focus figcaption, .portfolio-item:hover figcaption {
   cursor: pointer;
-  top: 0;
+  left: 0;
 }
 
 .portfolio-link {
@@ -436,7 +566,9 @@ setTimeout("defileBanniere('"+ban+"')",vitesseDeplacement);
   font-weight: bold;
   font-size: 1em;
   text-decoration: none;
+  display: flex;
   align-self: flex-start;
+  flex-direction: column;
   /*
   	&::after {
   		content: url(../../img/icone/f-b.png);
@@ -495,7 +627,6 @@ figcaption h2 {
 }
 
 .portfolio-title {
-  font-size: 48px;
   margin-bottom: auto;
 }
 
@@ -519,6 +650,10 @@ figcaption h2 {
   padding-bottom: 2em;
 }
 
+.portfolio-item img {
+  height: 100%;
+}
+
 .grid-portfolio {
   display: flex;
   justify-content: space-between;
@@ -530,6 +665,11 @@ figcaption h2 {
   box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
   margin-top: 20px;
   width: 45%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.grid-portfolio-img img {
   border-radius: 15px;
 }
 
@@ -552,6 +692,13 @@ figcaption h2 {
   opacity: 0.9;
 }
 
+.portfolio-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
 @keyframes modalIn {
   0% {
     opacity: 0;
@@ -567,6 +714,81 @@ figcaption h2 {
   100% {
     opacity: 0;
   }
+}
+.btn-filtres {
+  border: 2px solid rgba(132, 106, 221, 0.8);
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: rgba(132, 106, 221, 0.8);
+  cursor: pointer;
+}
+
+#filtres {
+  display: flex;
+  padding: 1em 1em;
+  justify-content: center;
+}
+
+.filtres button {
+  margin-right: 10px;
+}
+
+.active {
+  background-color: rgba(132, 106, 221, 0.8);
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.revel {
+  display: flex;
+}
+
+.small-logo {
+  height: 124px;
+  width: 92px;
+}
+
+.format-logo-banner {
+  background-color: white;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloc-about-text h2 {
+  color: white;
+}
+
+.bloc-about-text p {
+  font-size: 1.3em;
+  color: white;
+}
+
+.bloc-about-text-p {
+  width: 60%;
+}
+
+.flex-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.text-about {
+  text-align: center;
+}
+
+.format-img-banner {
+  height: auto;
+  width: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

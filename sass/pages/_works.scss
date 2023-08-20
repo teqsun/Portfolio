@@ -100,26 +100,29 @@
 	border-radius: 25px;
 position: relative;
 overflow: hidden;
-width: 50%;
+width: 45%;
+box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
+margin: 1.1em 1.7em;
  figcaption {
 	position: absolute;
-	top: 100%;
+	top: 0;
 	bottom: 0;
 	right: 0;
-	left: 0;
+	left: 100%;
 	
 	padding-left: 0;
-	background:  rgba( #549AF4, .5);
+	background:  rgba(132, 106, 221, 0.8);
 	color: white;
 	display: flex;
 	text-align: left;
 	flex-direction: column;
-	transition: top ease-in-out 350ms;
+	transition: left ease-in-out 350ms;
+	
  }
  &:focus figcaption,
  &:hover figcaption{
 	cursor: pointer;
-	top: 0;
+	left: 0;
  }
 }
 
@@ -131,7 +134,9 @@ width: 50%;
 	font-weight: bold;
 	font-size: 1em;
 	text-decoration: none;
-	align-self: flex-start;
+	display: flex;
+    align-self: flex-start;
+    flex-direction: column;
 /*
 	&::after {
 		content: url(../../img/icone/f-b.png);
@@ -190,7 +195,7 @@ figcaption h2 {
 }
 
 .portfolio-title {
-	font-size: 48px;
+	//font-size: 48px;
 	margin-bottom: auto;
 	}
 	
@@ -215,6 +220,9 @@ figcaption h2 {
 	padding-bottom: 2em;
 }
 
+.portfolio-item img{
+	height: 100%;
+}
 .grid-portfolio{
 	display: flex;
 	justify-content: space-between;
@@ -226,11 +234,13 @@ figcaption h2 {
 	box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
 	margin-top: 20px;
 	width: 45%;
-	border-radius: 15px;
-	
+	height: 100%;
+    border-radius: 15px;
 }
 
-
+.grid-portfolio-img img{
+	border-radius: 15px;
+}
 
 .modal-close {
 	background-color: #549AF4;
@@ -252,6 +262,13 @@ figcaption h2 {
 	}
 }
 
+.portfolio-items {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
 @keyframes modalIn{
 	0% {opacity: 0;}
 	100% {opacity: 1;}
@@ -259,4 +276,34 @@ figcaption h2 {
 @keyframes modalOut{
 	0% {opacity: 1;}
 	100% {opacity: 0;}
+}
+
+.btn-filtres{
+	border: 2px solid rgba(132, 106, 221, 0.8);
+	padding: 1em 2.2em;
+	border-radius: 3em;
+	background-color: transparent;
+	color: rgba(132, 106, 221, 0.8);
+	cursor: pointer;
+}
+#filtres {
+	display: flex;
+	padding: 1em 1em;
+	justify-content: center;
+}
+
+.filtres button {
+	margin-right: 10px;
+}
+.active {
+	background-color: rgba(132, 106, 221, 0.8);
+	color: white;
+}
+
+.hide{
+	display: none;
+}
+
+.revel {
+	display: flex;
 }

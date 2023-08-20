@@ -1,0 +1,41 @@
+.small-logo {
+    height: 124px;
+    width: 92px;
+}
+.format-logo-banner{
+    background-color: white;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloc-about-text h2 {
+    color: white;
+}
+.bloc-about-text  p{
+    font-size: 1.3em;
+    color: white;
+}
+
+.bloc-about-text-p{
+    width: 60%;
+}
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.text-about {
+    text-align: center;
+}
+
+.format-img-banner{
+
+    height: auto;
+    width: auto;
+}

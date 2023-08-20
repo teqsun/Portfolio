@@ -32,11 +32,20 @@
             <div class="logo-container"><img class="b-radius" src="img/nav/yvphotoprofil.png"></div>
             <div>
                 <ul class="nav-lien">
-                    <li id="nav-a-propos" class="nav-format">À propos</li>
+                    <li id="nav-a-propos" class="nav-format">
+                        <a href="#a-propos" class="nav-format">À propos
+                        </a>
+                    </li>
 
-                    <li id="nav-travaux" class="nav-format">Mes travaux</li>
-                    <li id="nav-competences" class="nav-format">Mes compétences</li>
-                    <li id="nav-contact" class="nav-format">Contact</li>
+                    <li id="nav-travaux" class="nav-format">
+                        <a href="#mes-travaux" class="nav-format">Mes travaux</a>
+                    </li>
+                    <li id="nav-competences" class="nav-format">
+                        <a href="#skills" class="nav-format">Compétences</a>
+                    </li>
+                    <li id="nav-contact" class="nav-format">
+                        <a href="#contact" class="nav-format">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -46,59 +55,88 @@
         </div>
 
     </div>
-    <section class="a-propos">
-        <div>
+    
+    <section id="a-propos" class="a-propos">
+        <div class="bloc-about-text">
             <h2>À propos</h2>
-            <div>
-                <p>bloque de texte a compléter</p>
-                <p>bloque de texte a compléter</p>
+        <div class="flex-about">
+            <div class="format-img-banner">
+                <img src="img/banniere/yv_small.png" class="small-profil" alt="">
             </div>
-            <img src="img/banniere/yv_small.png" class="small-profil" alt="">
-            <div class="bloc-media">
-                <a class="media-format" href="https://github.com/teqsun">
-                    <i class="fa-brands fa-github  media-github icone-format"></i>
+            <div class="bloc-about-text-p">
+               
+                <div class="text-about">
+                    <p>Heureux de vous rencontrer, je m'appelle Yohan Violès, je suis graphiste,
+                         Game Designer et depuis peu développer web avec une préférence pour le Front-end. </p>
 
-                </a>
-                <a class="media-format" href="https://www.linkedin.com/in/yohan-violes/">
-                    <i class="fa-brands fa-linkedin-in media-linkedin icone-format"></i>
-
-                </a>
-
-
+                         <p>Charmé par le domaine du coding, j'ai découvert les langages informatiques durant ma formation de web developper,
+                    me permettant d'ajouter de nouvelles compétences dans mes domaines de prédilictions</p>
+                
+                </div>
             </div>
+            <div  class="format-logo-banner">
+                <img src="img/banniere/logoNB.png" class="small-logo" alt="">
+            </div>
+            
+        </div>
+        <div class="bloc-media">
+            <a class="media-format" href="https://github.com/teqsun" target="_blank">
+                <i class="fa-brands fa-github  media-github icone-format"></i>
+
+            </a>
+            <a class="media-format" href="https://www.linkedin.com/in/yohan-violes/" target="_blank">
+                <i class="fa-brands fa-linkedin-in media-linkedin icone-format"></i>
+
+            </a>
+
+
         </div>
     </section>
     
-    <section class="mes-travaux">
-        <div class="portfolio-items">
+    <section id="mes-travaux" class="mes-travaux">
+        <h2 class="title-skill">Mes projets</h2>
 
-        <figure class="portfolio-item">
+        <section class="filtres" id="filtres">
+            <!-- onclick="filterBtn(tous)" 
+            onclick="filterBtn(web)"
+        onclick="filterBtn(illu)"
+    onclick="filterBtn(autres)"-->
+            <button id="btnAll" class="btn-filtres active"  >Tous</button>
+          
+           
+            <button  id="btnWeb" class="btn-filtres" >Developper web</button>
+       
+       
+            <button  id="btnIllu" class="btn-filtres"  >Illustrations</button>
+       
+            <button  id="btnOthers" class="btn-filtres" >Autres</button>
+       
+    
+        </section>
+
+        <div class="portfolio-items">
+        <figure class="portfolio-item others" >
             <img src="/img/portfolio/booki-card.png" alt="portfolio-booki">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Booki</h2>
                 <p>En savoir plus</p>
                 </a>
-
             </figcaption>
-
-                <div class="portfolio-modal">
-                    
+                <div class="portfolio-modal">   
                         <button class="modal-close">
                             <i class="fa-solid fa-x  "> </i>
                         </button>
                     <div class="portfolio-header">
                         <div class="portfolio-title-box">
                             <h2 class="portfolio-title">Booki</h2>
-                            <h3>description du projet :</h3>
+                            <h4>description du projet :</h4>
                             <p>Réalisation  d'un site vitrine lors de ma formation de web déveloper webchez openclassroom, travail centré autours du langage CSS</p>
-                            <h3>Compétences utilisées :</h3>
+                            <h4>Compétences utilisées :</h4>
                             <ul class="list-skills">
                                 <li class="items-skill">HTML</li>
-                                <li class="items-skill">CSS</li>
-                                
+                                <li class="items-skill">CSS</li>                               
                             </ul>
-
                         </div>
                         <img class="img-prez" src="/img/portfolio/booki-card.png" alt="">
                     </div>
@@ -114,46 +152,203 @@
                                 <img class="portfolio-full-width" src="/img/portfolio/booki-full.png" alt="">
                             </div>
                         </div>
-                    </div>
-                   
+                    </div> 
                 </div>
+        </figure>   
+        <figure class="portfolio-item illustration">
+            <img src="/img/portfolio/portfolio/p3_6.png" alt="portfolio-grimoire">
+            <figcaption >
+                <a href="#" class="portfolio-link">
+                <h2 class="portfolio-title">Sophie Bluel</h2>
+                <p>En savoir plus</p>
+                </a>
+            </figcaption>
+                <div class="portfolio-modal">   
+                        <button class="modal-close">
+                            <i class="fa-solid fa-x  "> </i>
+                        </button>
+                    <div class="portfolio-header">
+                        <div class="portfolio-title-box">
+                            <h2 class="portfolio-title">Créer un porfolio dynamique</h2>
+                            <h4>description du projet :</h4>
+                            <p>Créez une page web dynamique avec JavaScript lors de ma formation de web déveloper web chez openclassroom, travail focalisé sur l'optimisation des iamges et la réactivité du site</p>
+                            <h4>Compétences utilisées :</h4>
+                            <ul class="list-skills">
+                                <li class="items-skill">JavaScript</li>
+                                <li class="items-skill">FETCH</li>
+                                <li class="items-skill">DOM</li> 
+                                <li class="items-skill">HTTP</li>   
+                                <li class="items-skill">Terminal</li>                              
+                            </ul>
+                        </div>
+                        <img class="img-prez" src="/img/portfolio/portfolio/p3_6.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="grid-portfolio">
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/portfolio/p3_1.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/portfolio/p3_2.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/portfolio/p3_3.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/portfolio/p3_4.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/portfolio/p3_5.png" alt="">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+        </figure>   
 
-                
-
-        </figure>
-        <!--
-        <div class="format-card-work">
-            <a href="#modal1" class="format-a-modal js-modal js-modal-trigger" >
-            <img  src="img/portfolio/booki-card.png" alt=""> 
-        </a>
-                <aside data-id="1" id="modal1" class="modal" aria-hidden="true" role="dialog"
-                aria-labelledby="titlemodal" >
-
-                <div class="modal-wrapper js-stop-modal flex-column">
-                    <i class="fa-solid fa-x btn-close-modal js-close-modal"> </i>
-                    <div class="flex-modal">
-                        
-                        <h2 class="titlemodal">Galerie photo</h2>
-                        <section class="galerie-pictures">
-
-                        </section>
-                        
-                          
+        <figure class="portfolio-item illustration">
+            <img src="/img/portfolio/nina/p5_3.png" alt="portfolio-grimoire">
+            <figcaption >
+                <a href="#" class="portfolio-link">
+                <h2 class="portfolio-title">Portfolio Nina Carducci</h2>
+                <p>En savoir plus</p>
+                </a>
+            </figcaption>
+                <div class="portfolio-modal">   
+                        <button class="modal-close">
+                            <i class="fa-solid fa-x  "> </i>
+                        </button>
+                    <div class="portfolio-header">
+                        <div class="portfolio-title-box">
+                            <h2 class="portfolio-title">Photographe Nina Carducci</h2>
+                            <h4>description du projet :</h4>
+                            <p>Débuggez et optimisez le site de la photographe Nina Carducci lors de ma formation de web déveloper webchez openclassroom, travail focalisé sur l'optimisation des iamges et la réactivité du site</p>
+                            <h4>Compétences utilisées :</h4>
+                            <ul class="list-skills">
+                                <li class="items-skill">JavaScript</li>
+                                <li class="items-skill">Front-end</li>
+                                <li class="items-skill">Lighthouse</li>
+                                <li class="items-skill">SEO</li>                              
+                            </ul>
+                        </div>
+                        <img class="img-prez" src="/img/portfolio/nina/p5_3.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="grid-portfolio">
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/nina/p5_1.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/nina/p5_2.png" alt="">
+                            </div>
                            
                         </div>
-                    </div>
-
+                    </div> 
                 </div>
-
-            </aside>
-            
-        </div>
-    -->
+        </figure>   
+        <figure class="portfolio-item web-design">
+            <img src="/img/portfolio/kasa/p6_5.png" alt="portfolio-grimoire">
+            <figcaption >
+                <a href="#" class="portfolio-link">
+                <h2 class="portfolio-title">Site immobilier KASA</h2>
+                <p>En savoir plus</p>
+                </a>
+            </figcaption>
+                <div class="portfolio-modal">   
+                        <button class="modal-close">
+                            <i class="fa-solid fa-x  "> </i>
+                        </button>
+                    <div class="portfolio-header">
+                        <div class="portfolio-title-box">
+                            <h2 class="portfolio-title">Site immobilier KASA</h2>
+                            <h4>description du projet :</h4>
+                            <p>Créez une application web de location immobilière Kasa lors de ma formation de web déveloper webchez openclassroom, mise en place du rooting entre le front-end et le back-end à l'aide de REACT</p>
+                            <h4>Compétences utilisées :</h4>
+                            <ul class="list-skills">
+                                <li class="items-skill">JavaScript</li>
+                                <li class="items-skill">SASS</li>
+                                <li class="items-skill">React</li>
+                                <li class="items-skill">React rooter</li>
+                                <li class="items-skill">Backend</li>
+                                <li class="items-skill">Collapse</li>                              
+                            </ul>
+                        </div>
+                        <img class="img-prez" src="/img/portfolio/kasa/p6_5.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="grid-portfolio">
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/kasa/p6_1.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/kasa/p6_2.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/kasa/p6_3.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/kasa/p6_4.png" alt="">
+                            </div>
+                            
+                        </div>
+                    </div> 
+                </div>
+        </figure>  
+        <figure class="portfolio-item web-design">
+            <img src="/img/portfolio/grimoire/p7_1.png" alt="portfolio-grimoire">
+            <figcaption >
+                <a href="#" class="portfolio-link">
+                <h2 class="portfolio-title">Mon vieux grimoire</h2>
+                <p>En savoir plus</p>
+                </a>
+            </figcaption>
+                <div class="portfolio-modal">   
+                        <button class="modal-close">
+                            <i class="fa-solid fa-x  "> </i>
+                        </button>
+                    <div class="portfolio-header">
+                        <div class="portfolio-title-box">
+                            <h2 class="portfolio-title">Booki</h2>
+                            <h4>description du projet :</h4>
+                            <p>Développez le back-end d'un site de notation de livres appelé "Mon vieux Grimoire" lors de ma formation de web déveloper webchez openclassroom, création d'une base donnée en partant sur le dront-end fourni, notation, ajouter, supprimer des livres, retour avec les mieux notés</p>
+                            <h4>Compétences utilisées :</h4>
+                            <ul class="list-skills">
+                                <li class="items-skill">JavaScript</li>
+                                <li class="items-skill">React</li>
+                                <li class="items-skill">Backend</li>
+                                <li class="items-skill">MongoDB</li>                              
+                            </ul>
+                        </div>
+                        <img class="img-prez" src="/img/portfolio/grimoire/p7_1.png" alt="">
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="grid-portfolio">
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/grimoire/p7_2.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/grimoire/p7_3.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/grimoire/p7_4.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/grimoire/p7_5.png" alt="">
+                            </div>
+                            <div class="grid-portfolio-img">
+                                <img class="portfolio-full-width" src="/img/portfolio/grimoire/p7_6.png" alt="">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+        </figure>   
 </div>
+
+    
+
     </section>
 
 
-    <section class="mes-competences">
+    <section id="skills" class="mes-competences">
         <div class="bloc-skill">
             <h2 class="title-skill">Mes compétences</h2>
             <div class="wrap">
@@ -164,7 +359,7 @@
                         </div>
                         <h3 class="title-card-service">Web développement</h3>
                         <p class="p-margin-bottom">Développement d'applications web front-end, sites vitrines</p>
-                        <p class="title-card-rond">Langages utilisés</p>
+                        <h4 class="title-card-rond">Langages utilisés</h4>
                         <ul class="list-skills">
                             <li class="items-skill">HTML</li>
                             <li class="items-skill">CSS</li>
@@ -220,7 +415,7 @@
 
 
 
-    <section class="contact">
+    <section id="contact" class="contact">
 
 <!--
         <?php if (($_SERVER["REQUEST_METHOD"] == "POST")) {
@@ -279,17 +474,28 @@
         </div>
 -->
         <div class="contact-form">
-            <form id="contact-form" method="post" action="php/form.php">
-                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                <br>
-                <input name="email" type="email" class="form-control" placeholder="Your mail" required>
-                <br>
-                <textarea name="name" type="text" class="form-control" placeholder="Votre message" required>
-                </textarea><br>
-
-                <input type="submit" class="form-control submit" value="SEND MESSAGE">
-            </form>
-           
+            
+            <div class="bloc-form">
+                
+                <div class="logo-mail mail-style">
+                    <h2 class="title-form">Pour me contacter, c'est ici !</h2>
+                    <img src="img/form/img-mail.webp" alt="">
+                </div>
+                <form class="form-format" id="contact-form" method="post" action="https://api.web3forms.com/submit">
+                    <input type="hidden" name="access_key" id="" value="1c362179-4197-4e82-8b61-8e38793dc289">
+                    
+                    <input class="input-design" name="name" type="text"  placeholder="Votre nom" required>
+                    <br>
+                    <input class="input-design" name="email" type="email"  placeholder="Votre mail" required>
+                    <br>
+                    <textarea name="name" type="text" class="input-design" placeholder="Votre message" required>
+                    </textarea>
+                    <br>
+                    <div class="btn-send">
+                        <input type="submit" class="form-control submit btn-send-design " value="Envoyer votre message">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -312,7 +518,9 @@
 
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/filterBtn.js"></script>
     <script src="js/modal.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>

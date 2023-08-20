@@ -1,4 +1,29 @@
 h2{
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+a,p, li, label{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+
 }
