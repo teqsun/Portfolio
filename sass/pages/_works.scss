@@ -307,3 +307,24 @@ figcaption h2 {
 .revel {
 	display: flex;
 }
+
+.portfolio-title-box-solo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    align-self: self-start;
+    width: 45%;
+    max-width: 600px;
+}
+
+.img-prez-solo{
+
+		height: auto;
+		max-width: 600px;
+		width: 45%;
+		border-radius: 25px;
+		box-shadow: 0 0 0.4em 0.1em rgba(0, 0, 0, 0.5);
+	
+}

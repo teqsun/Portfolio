@@ -110,9 +110,8 @@ html {
 
 .footer-format {
   background-color: #E8E8E8;
-  padding: 20px 0;
+  padding-bottom: 30px;
   width: 100%;
-  height: 80px;
 }
 .footer-format p {
   color: white;
@@ -124,6 +123,9 @@ html {
   max-width: 1400px;
   padding: 0 10px;
   margin: 0 auto;
+}
+.bloc-footer p {
+  color: black;
 }
 
 .banner {
@@ -168,7 +170,7 @@ html {
 }
 
 .media-format {
-  border: 1.5px solid #222288;
+  border: 1.5px solid #846add;
   width: 38px;
   height: 38px;
   margin-right: 0.625rem;
@@ -179,19 +181,41 @@ html {
   transition: 0.3s;
 }
 .media-format:hover {
-  background-color: #69699c;
+  background-color: #846add;
 }
 .media-format:hover .icone-format {
+  color: #dbdbe7;
+}
+
+.media-format-link {
+  border: 1.5px solid #846add;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.media-format-link:hover {
+  background-color: #846add;
+}
+.media-format-link:hover .icone-format {
   color: #dbdbe7;
 }
 
 .bloc-media {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .icone-format {
   border-radius: 50%;
+}
+
+.padd-link {
+  padding-top: 20px;
 }
 
 .contact-form {
@@ -745,6 +769,25 @@ figcaption h2 {
 
 .revel {
   display: flex;
+}
+
+.portfolio-title-box-solo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  align-self: self-start;
+  width: 45%;
+  max-width: 600px;
+}
+
+.img-prez-solo {
+  height: auto;
+  max-width: 600px;
+  width: 45%;
+  border-radius: 25px;
+  box-shadow: 0 0 0.4em 0.1em rgba(0, 0, 0, 0.5);
 }
 
 .small-logo {

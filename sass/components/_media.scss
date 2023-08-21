@@ -1,6 +1,6 @@
 .media-format {
 
-    border: 1.5px solid #222288;
+    border: 1.5px solid #846add;;
     width: 38px;
     height: 38px;
     margin-right: 0.625rem;
@@ -8,20 +8,40 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    
     &:hover{
-        background-color: #69699c;
+        background-color: #846add;;
 
         .icone-format{
             color: #dbdbe7;
         }
     }
     transition: 0.3s;
-
 }
+.media-format-link {
 
+    border: 1.5px solid #846add;;
+    width: 38px;
+    height: 38px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    &:hover{
+        background-color: #846add;;
+
+        .icone-format{
+            color: #dbdbe7;
+        }
+    }
+    transition: 0.3s;
+}
 .bloc-media {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px ;
 }
 
 .icone-format {
@@ -30,4 +50,8 @@
     border-radius: 50%;
     
     
+}
+
+.padd-link{
+    padding-top: 20px ;
 }
