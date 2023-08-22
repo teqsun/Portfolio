@@ -216,6 +216,12 @@ html {
 
 .padd-link {
   padding-top: 20px;
+  display: flex;
+}
+
+.padd-link a {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .contact-form {
@@ -340,9 +346,9 @@ textarea.input-design {
   box-shadow: 0 5px 20px 0 rgba(104, 104, 133, 0.288);
   border-radius: 12px;
   text-align: center;
-  padding: 50px 15px 0 15px;
+  padding: 30px 15px 0 15px;
   position: relative;
-  height: 350px;
+  height: 375px;
 }
 
 .skill-format-box {
@@ -652,6 +658,7 @@ figcaption h2 {
 
 .portfolio-title {
   margin-bottom: auto;
+  text-align: center;
 }
 
 .portfolio-header {
@@ -676,19 +683,19 @@ figcaption h2 {
 
 .portfolio-item img {
   height: 100%;
+  object-fit: cover;
 }
 
 .grid-portfolio {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .grid-portfolio-img {
   box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
   margin-top: 20px;
-  width: 45%;
+  width: 100%;
   height: 100%;
   border-radius: 15px;
 }
@@ -832,6 +839,78 @@ figcaption h2 {
 .format-img-banner {
   height: auto;
   width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .flex-about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-items {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .portfolio-item {
+    width: auto;
+  }
+  .card-service {
+    height: 305px;
+  }
+  .bloc-form {
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 100px 130px 130px 130px;
+  }
+  .form-format, .logo-mail {
+    width: 100%;
+  }
+  .portfolio-header {
+    width: 100%;
+    padding-top: 25px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .portfolio-title-box {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .img-prez {
+    max-width: none;
+    width: 100%;
+  }
+  .portfolio-title-box-solo {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .img-prez-solo {
+    max-width: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 898px) {
+  .skill-format-box {
+    width: 90%;
+    padding-top: 3em;
+  }
+}
+@media screen and (max-width: 1044px) {
+  .bloc-form {
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 100px 130px 130px 130px;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .portfolio-item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

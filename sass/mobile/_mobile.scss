@@ -1,0 +1,102 @@
+@media screen and (max-width:767px){
+
+    .flex-about{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-items{
+    flex-direction: column;
+    
+    align-items: center;
+    margin-top: 50px;
+    }
+    .portfolio-item{
+    width: auto;
+
+    }
+
+    .card-service {
+        height: 305px;
+    }
+    .bloc-form {
+        width: auto;
+
+        flex-direction: column;
+        display: flex;
+       
+        align-items: center;
+      
+        padding: 100px 130px 130px 130px;
+    }
+
+    .form-format, .logo-mail{
+        width: 100%;
+    }
+    .portfolio-header {
+        width: 100%;
+        padding-top: 25px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .portfolio-title-box {
+      
+        width: 100%;
+        padding-bottom: 20px;
+       
+    }
+
+    .img-prez {
+       
+        max-width: none;
+        width:100%;
+        
+    }
+
+    .portfolio-title-box-solo {
+      
+        width: 100%;
+        padding-bottom: 20px;
+       
+    }
+
+    .img-prez-solo {
+       
+        max-width: none;
+        width:100%;
+        
+    }
+
+}
+
+@media screen and (max-width:898px){
+
+    .skill-format-box {
+        width: 90%;
+        padding-top: 3em;
+    }
+
+
+}
+
+@media screen and (max-width:1044px){
+.bloc-form {
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 100px 130px 130px 130px;
+}
+}
+
+
+@media screen and (max-width:1105px){
+.portfolio-item {
+
+    width: 100%;
+
+}
+
+}

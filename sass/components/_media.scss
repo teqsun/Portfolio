@@ -52,6 +52,13 @@
     
 }
 
-.padd-link{
-    padding-top: 20px ;
+.padd-link {
+    padding-top: 20px;
+    display: flex;
+}
+
+.padd-link a {
+    
+    margin-left: 5px;
+    margin-right: 5px;
 }

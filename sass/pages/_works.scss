@@ -197,6 +197,7 @@ figcaption h2 {
 .portfolio-title {
 	//font-size: 48px;
 	margin-bottom: auto;
+	text-align: center;
 	}
 	
 
@@ -222,18 +223,19 @@ figcaption h2 {
 
 .portfolio-item img{
 	height: 100%;
+	object-fit: cover;
 }
 .grid-portfolio{
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-top: 50px;
+    
+    align-items: center;
+    flex-direction: column;
 }
 
 .grid-portfolio-img{
 	box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
 	margin-top: 20px;
-	width: 45%;
+	width: 100%;
 	height: 100%;
     border-radius: 15px;
 }
