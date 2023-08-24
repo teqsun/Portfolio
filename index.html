@@ -29,7 +29,7 @@
     <nav class="flex-nav">
         <div class="main-nav large-nav-menu">
             <div class="logo-container"><img class="b-radius" src="img/nav/yvphotoprofil.png"></div>
-            <div>
+            <div class="nav-link-normal">
                 <ul class="nav-lien">
                     <li id="nav-a-propos" class="nav-format">
                         <a href="#a-propos" class="nav-format">À propos
@@ -47,8 +47,37 @@
                     </li>
                 </ul>
             </div>
+            <a  id="topnav_hamburger_icon" class="" href="javascript:void(0);" >
+              
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+      
         </div>
     </nav>
+
+         
+       
+        <div id="mySidenav" class="sidenav">
+           
+            <ul class="nav-lien-2">
+                <li id="nav-a-propos" class="nav-format-burger">
+                    <a href="#a-propos" class="nav-format">À propos
+                    </a>
+                </li>
+
+                <li id="nav-travaux" class="nav-format-burger">
+                    <a href="#mes-travaux" class="nav-format">Mes travaux</a>
+                </li>
+                <li id="nav-competences" class="nav-format-burger">
+                    <a href="#skills" class="nav-format">Compétences</a>
+                </li>
+                <li id="nav-contact" class="nav-format-burger">
+                    <a href="#contact" class="nav-format">Contact</a>
+                </li>
+            </ul>
+        </div>
     <div class="format-banner ">
         <div id="bandeau_horizontal">
         </div>
@@ -111,7 +140,7 @@
                 <p>En savoir plus</p>
                 </a>
             </figcaption>
-                <div class="portfolio-modal">   
+                <div class="portfolio-modal js-stop-modal">   
                         <button class="modal-close">
                             <i class="fa-solid fa-x  "> </i>
                         </button>
@@ -125,11 +154,11 @@
                                 <li class="items-skill">HTML</li>
                                 <li class="items-skill">CSS</li>                               
                             </ul>
-                            <div class="padd-link">
-                                <a class="media-format-link" href="https://github.com/teqsun/Yohan-V-projet-2.github.io-" target="_blank">
+                            <div class="bloc-media">
+                                <a target="_blank" class="media-format" href="https://github.com/teqsun/Yohan-V-projet-2.github.io-" >
                                     <i class="fa-brands fa-github  media-github icone-format"></i>
                                 </a>
-                                <a class="media-format-link" href="https://teqsun.github.io/projet-2-booki/" target="_blank">
+                                <a target="_blank" class="media-format" href="https://teqsun.github.io/projet-2-booki/" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
@@ -147,14 +176,14 @@
                 </div>
         </figure>   
         <figure class="portfolio-item web-design">
-            <img src="./img/portfolio/portfolio/p3_6.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/portfolio/p3_6.png" alt="portfolio-sophie-bluel">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Sophie Bluel</h2>
                 <p>En savoir plus</p>
                 </a>
             </figcaption>
-                <div class="portfolio-modal">   
+                <div class="portfolio-modal js-stop-modal">   
                         <button class="modal-close">
                             <i class="fa-solid fa-x  "> </i>
                         </button>
@@ -173,7 +202,7 @@
                                 <li class="items-skill">Terminal</li>                              
                             </ul>
                             <div class="padd-link">
-                                <a class="media-format-link" href="https://github.com/teqsun/Violes-Yohan-projet-3" target="_blank">
+                                <a class="media-format" href="https://github.com/teqsun/Violes-Yohan-projet-3" target="_blank">
                                     <i class="fa-brands fa-github  media-github icone-format"></i>
                                 </a>
                             </div>
@@ -203,7 +232,7 @@
         </figure>   
 
         <figure class="portfolio-item web-design">
-            <img src="./img/portfolio/nina/p5_3.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/nina/p5_3.png" alt="portfolio-Nina-carducci">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Portfolio Nina Carducci</h2>
@@ -227,10 +256,10 @@
                                 <li class="items-skill">SEO</li>                              
                             </ul>
                             <div class="padd-link">
-                                <a class="media-format-link" href="https://github.com/teqsun/nina-carducci.github.io" target="_blank">
+                                <a class="media-format" href="https://github.com/teqsun/nina-carducci.github.io" target="_blank">
                                     <i class="fa-brands fa-github  media-github icone-format"></i>
                                 </a>
-                                <a class="media-format-link" href="https://teqsun.github.io/nina-carducci/" target="_blank">
+                                <a class="media-format" href="https://teqsun.github.io/nina-carducci/" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
@@ -251,7 +280,7 @@
                 </div>
         </figure>   
         <figure class="portfolio-item web-design">
-            <img src="./img/portfolio/kasa/p6_5.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/kasa/p6_5.png" alt="portfolio-KASA">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Site immobilier KASA</h2>
@@ -277,8 +306,11 @@
                                 <li class="items-skill">Collapse</li>                              
                             </ul>
                             <div class="padd-link">
-                                <a class="media-format-link" href="https://github.com/teqsun/site-immobilier-kasa" target="_blank">
+                                <a class="media-format" href="https://github.com/teqsun/site-immobilier-kasa" target="_blank">
                                     <i class="fa-brands fa-github  media-github icone-format"></i>
+                                </a>
+                                <a target="_blank" class="media-format" href="https://teqsun.github.io/site-immobilier-kasa/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
                         </div>
@@ -328,7 +360,7 @@
                                 <li class="items-skill">MongoDB</li>                              
                             </ul>
                             <div class="padd-link">
-                                <a class="media-format-link" href="https://github.com/teqsun/P7-Dev-Web-livres" target="_blank">
+                                <a class="media-format" href="https://github.com/teqsun/P7-Dev-Web-livres" target="_blank">
                                     <i class="fa-brands fa-github  media-github icone-format"></i>
                                 </a>
                             </div>
@@ -358,7 +390,7 @@
         </figure>   
 
         <figure class="portfolio-item illustration">
-            <img src="./img/portfolio/illustrations/johny-deep.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/illustrations/johny-deep.png" alt="portfolio-gouache">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Gouache</h2>
@@ -393,7 +425,7 @@
         </figure>  
 
         <figure class="portfolio-item illustration">
-            <img src="./img/portfolio/illustrations/crayon-couleur_edited.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/illustrations/crayon-couleur_edited.png" alt="portfolio-crayons-couleurs">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Crayons de couleurs</h2>
@@ -427,7 +459,7 @@
         </figure> 
 
         <figure class="portfolio-item illustration">
-            <img src="./img/portfolio/illustrations/apatron.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/illustrations/apatron.png" alt="portfolio-patron">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Style à la manière de</h2>
@@ -465,7 +497,7 @@
         </figure>   
 
         <figure class="portfolio-item illustration">
-            <img src="./img/portfolio/illustrations/coq-hardi.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/illustrations/coq-hardi.png" alt="portfolio-coq-hardi">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Refonte de logo</h2>
@@ -496,7 +528,7 @@
         </figure>   
 
         <figure class="portfolio-item illustration">
-            <img src="./img/portfolio/illustrations/ratatouille.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/illustrations/ratatouille.png" alt="portfolio-ratatouille">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">I want you for kitchen staff</h2>
@@ -535,7 +567,7 @@
         </figure> 
 
         <figure class="portfolio-item illustration">
-            <img src="./img/portfolio/illustrations/vivi-01.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/illustrations/vivi-01.png" alt="portfolio-vivi-mage">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Fan art final fantasy IX</h2>
@@ -575,7 +607,7 @@
         </figure> 
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/inti/sticker.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/inti/sticker.png" alt="portfolio-inti">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Inti</h2>
@@ -619,7 +651,7 @@
                                 <img class="portfolio-full-width" src="./img/portfolio/autres/inti/control_manette (1).png" alt="">
                             </div>
                             <div class="grid-portfolio-img">
-                                <img class="portfolio-full-width" src="/img/portfolio/autres/inti/inti1.jpg" alt="">
+                                <img class="portfolio-full-width" src="./img/portfolio/autres/inti/inti.jpg" alt="">
                             </div>
                             <div class="grid-portfolio-img">
                                 <img class="portfolio-full-width" src="./img/portfolio/autres/inti/inti2.jpg" alt="">
@@ -639,7 +671,7 @@
         </figure>  
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/voile/club-voile-1.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/voile/club-voile-1.png" alt="portfolio-club-voile">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Club de voile</h2>
@@ -690,7 +722,7 @@
         </figure>  
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/Torrents/prospectus.jpg" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/Torrents/prospectus.jpg" alt="portfolio-torrents-lyon">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Les torrents de Lyon</h2>
@@ -735,7 +767,7 @@
         </figure>  
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/bouteillevent.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/bouteillevent.png" alt="portfolio-bombay-sapphire">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Bombay Sapphire</h2>
@@ -774,7 +806,7 @@
                 </div>
         </figure>  
          <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/peinture-de-guerre.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/peinture-de-guerre.png" alt="portfolio-peinture-guerre">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Peinture de guerre</h2>
@@ -814,7 +846,7 @@
         </figure>  
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/photo-pub.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/photo-pub.png" alt="portfolio-beyond-meat">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Beyond Meat</h2>
@@ -857,7 +889,7 @@
         </figure>  
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/pavlov.jpg" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/pavlov.jpg" alt="portfolio-pavlov">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Le chien de pavlov</h2>
@@ -895,7 +927,7 @@
         </figure>  
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/lego.png" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/lego.png" alt="portfolio-lego">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Lego</h2>
@@ -931,7 +963,7 @@
         </figure>
 
         <figure class="portfolio-item others">
-            <img src="./img/portfolio/autres/rasho/ascensseur.jpg" alt="portfolio-grimoire">
+            <img src="./img/portfolio/autres/rasho/ascensseur.jpg" alt="portfolio-rashomon">
             <figcaption >
                 <a href="#" class="portfolio-link">
                 <h2 class="portfolio-title">Rashomon</h2>
@@ -966,7 +998,7 @@
                                 <li class="items-skill">Sound Design</li>                                     
                             </ul>
                             <div class="padd-link">
-                                <a class="media-format-link" href="https://www.rashomon-escape.com/escape-game/missions/ascenseur" target="_blank">
+                                <a class="media-format" href="https://www.rashomon-escape.com/escape-game/missions/ascenseur" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
@@ -1062,11 +1094,13 @@
                         <p class="p-margin-bottom">Développement d'applications web front-end, sites vitrines</p>
                         <h4 class="title-card-rond">Compétences maitrisées</h4>
                         <ul class="list-skills">
-                            <li class="items-skill">Gestion d'équipe</li>
-                            <li class="items-skill">polyvalent</li>
-                            <li class="items-skill">assidu</li>
-                            <li class="items-skill">curieux</li>
-                            <li class="items-skill">PHP</li>
+                            <li class="items-skill">Gestion de projet</li>
+                            <li class="items-skill">polyvalence</li>
+                            <li class="items-skill">Management</li>
+                            <li class="items-skill">rigueur</li>
+                            <li class="items-skill">Interêt nouvelles technologies</li>
+                            <li class="items-skill">Environnement Window</li>
+                            <li class="items-skill">Environnement Mac</li>
                         </ul>
                     </div>
                 </div>
@@ -1128,6 +1162,7 @@
     <script src="js/index.js"></script>
     <script src="js/filterBtn.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/collapse.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 

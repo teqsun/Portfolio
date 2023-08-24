@@ -69,6 +69,10 @@
         
     }
 
+    .nav-link-normal{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:898px){
@@ -92,11 +96,5 @@
 }
 
 
-@media screen and (max-width:1105px){
-.portfolio-item {
 
-    width: 100%;
 
-}
-
-}

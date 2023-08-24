@@ -30,7 +30,7 @@
 }
 
 .rond-card-service.rond-softskill{
-  background-color:   #549AF4;
+  background-color:  $purple-light;
 }
 
 .btn-cv{
@@ -49,7 +49,7 @@
     cursor: pointer;
     font-weight: 500;
     &:hover{
-        background-color: #5f38df;
+        background-color: $purple-light;
     }
 
 }
@@ -59,13 +59,13 @@
 }
 
 .rond-card-service.rond-illuskill{
-    background-color:   #B61679;
+    background-color: $purple-light;
   }
 
 .rond-card-service {
 	transform: translate(-50%, -50%);
 	left: 50%;
-    background-color: #316EE1;
+    background-color: $purple-light;
 	position: absolute;
 	top: 0em;
 	width: 70px;
@@ -80,7 +80,6 @@
 
 .title-card-service{
 	font-size: 1.5em;
-//	color: $primary-color;
 	font-weight: 600;
 	
 }
@@ -109,21 +108,10 @@
 
 .title-card-rond {
 	font-size: 1.1em;
-	//color: $primary-color;
+	
 	margin-bottom: 10px;
 	
-//	color: $primary-color;
+
 
 }
 
-.card-rond-webdev {
-	//background-color: $primary-color;
-}
-
-.card-rond-webdesign {
-	//background-color: $violet;
-}
-
-.card-rond-illu {
-	//background-color: $pink;
-}

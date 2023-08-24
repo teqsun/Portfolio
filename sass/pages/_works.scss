@@ -98,11 +98,12 @@
 
 .portfolio-item {
 	border-radius: 25px;
-position: relative;
-overflow: hidden;
-width: 45%;
-box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
-margin: 1.1em 1.7em;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    width: 45%;
+    box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
+    margin: 1.1em 1.2em;
  figcaption {
 	position: absolute;
 	top: 0;
