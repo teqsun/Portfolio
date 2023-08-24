@@ -404,7 +404,6 @@ textarea.input-design {
   color: #0078b4;
 }
 
-/* hide responsive menu */
 #topnav_hamburger_icon,
 #topnav_responsive_menu {
   display: none;
@@ -414,17 +413,13 @@ textarea.input-design {
   .main-nav {
     max-width: 745px;
   }
-  /* hide classic menu */
   #topnav_menu {
     display: none;
   }
-  /* position home link at left and hamburger at right */
-  /* disable horizontal scrolling  */
   #root {
     position: relative;
     overflow-x: hidden;
   }
-  /* show responsive menu and position at the right of the screen */
   #topnav_responsive_menu {
     display: block;
     position: absolute;
@@ -461,13 +456,10 @@ textarea.input-design {
     color: #333;
     text-decoration: none;
   }
-  /* And let's slide it in from the right */
   #topnav_responsive_menu.open {
     transform: none;
     position: fixed;
   }
-  /* ******************** HAMBURGER ICON ******************** */
-  /* define size and position of the hamburger link */
   #topnav_hamburger_icon {
     display: block;
     position: relative;
@@ -479,7 +471,6 @@ textarea.input-design {
     user-select: none;
     cursor: pointer;
   }
-  /* define the style (size, color, position, animation, ...) of the 3 spans */
   #topnav_hamburger_icon span {
     display: block;
     position: absolute;
@@ -500,7 +491,6 @@ textarea.input-design {
     -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
   }
-  /* set the 3 spans position to look like a hamburger */
   #topnav_hamburger_icon span:nth-child(1) {
     top: 0px;
     -webkit-transform-origin: left top;
@@ -522,7 +512,6 @@ textarea.input-design {
     -o-transform-origin: left bottom;
     transform-origin: left bottom;
   }
-  /* change color when opening the menu */
   #topnav_hamburger_icon.open span {
     background: #333;
   }
@@ -561,7 +550,6 @@ textarea.input-design {
   transition: top 1.2s ease;
 }
 
-/* Sidenav menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -581,19 +569,16 @@ textarea.input-design {
   margin: 0;
 }
 
-/* Active class */
 .sidenav.active {
   top: 0px;
 }
 
-/* Close btn */
 .sidenav .close {
   position: absolute;
   right: 25px;
   font-size: 36px;
 }
 
-/* Icône burger */
 .burger-icon span {
   display: block;
   width: 35px;
@@ -808,22 +793,6 @@ textarea.input-design {
   display: flex;
 }
 
-/*
-.modal-wrapper2 {
-	overflow: auto;
-	width: 630px;
-	height: 670px;
-	max-width: calc(100vw -20px);
-	max-height: calc(100vh -20px);
-	border-radius: 12px;
-	padding: 20px;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	animation: slideFromTop .5s both;
-
-}
-*/
 .btn-close-modal {
   color: black;
   padding-top: 10px;
@@ -885,13 +854,6 @@ textarea.input-design {
   display: flex;
   align-self: flex-start;
   flex-direction: column;
-  /*
-  	&::after {
-  		content: url(../../img/icone/f-b.png);
-  		display: inline-block;
-  		height: 1em;
-  		width: 1em;
-  	} */
 }
 
 .flex-beetween {

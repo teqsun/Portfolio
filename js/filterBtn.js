@@ -25,13 +25,7 @@ const worksIllustrations = document.querySelectorAll(".illustration");
 const worksWebs = document.querySelectorAll(".web-design");
 
 const worksOthers = document.querySelectorAll(".others");
-//const worksOthers = document.getElementsByClassName("others")[0];
-//const worksWeb = document.getElementsByClassName("web-design")[0];
-//const worksIllustration = document.getElementsByClassName("illustration")[0];
 
-console.log(worksIllustrations)
-console.log(worksWebs)
-console.log(worksOthers)
 
 btnWeb.addEventListener('click', (e)=>{
 
@@ -86,7 +80,7 @@ function  projectFilter(e) {
           worksOthers.forEach((worksOther) => {
             worksOther.classList.add('hide');
           });
-       // console.log(worksIllustration)
+       
        
     }
 
@@ -119,10 +113,3 @@ function  projectFilter(e) {
     }
     
 }
-/*
-function changeBtnFilter(e){
-
-    const activeBtn= document.getElementsByClassName("active")
-
-
-}*/

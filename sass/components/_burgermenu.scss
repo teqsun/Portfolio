@@ -41,7 +41,7 @@
     padding-top: 73px;
     display: flex;
     flex-direction: column;
-   // align-items: center;
+
 
     .wibloc {
         width: 80%;
@@ -81,7 +81,7 @@
     color: #0078b4;
   }
   
-  /* hide responsive menu */
+
   #topnav_hamburger_icon,
   #topnav_responsive_menu {
     display: none;
@@ -92,21 +92,17 @@
     .main-nav{
         max-width: 745px;
     }
-    /* hide classic menu */
+
     #topnav_menu {
       display: none;
     }
-  
-    /* position home link at left and hamburger at right */
-    
-  
-    /* disable horizontal scrolling  */
+
     #root {
       position: relative;
       overflow-x: hidden;
     }
   
-    /* show responsive menu and position at the right of the screen */
+
     #topnav_responsive_menu {
       display: block;
       position: absolute;
@@ -154,14 +150,13 @@
       text-decoration: none;
     }
   
-    /* And let's slide it in from the right */
+
     #topnav_responsive_menu.open {
       transform: none;
       position: fixed;
     }
   
-    /* ******************** HAMBURGER ICON ******************** */
-    /* define size and position of the hamburger link */
+
     #topnav_hamburger_icon {
       display: block;
       position: relative;
@@ -176,7 +171,7 @@
       cursor: pointer;
     }
   
-    /* define the style (size, color, position, animation, ...) of the 3 spans */
+
     #topnav_hamburger_icon span {
       display: block;
       position: absolute;
@@ -202,7 +197,7 @@
       transition: 0.25s ease-in-out;
     }
   
-    /* set the 3 spans position to look like a hamburger */
+
     #topnav_hamburger_icon span:nth-child(1) {
       top: 0px;
       -webkit-transform-origin: left top;
@@ -225,7 +220,7 @@
       transform-origin: left bottom;
     }
   
-    /* change color when opening the menu */
+
     #topnav_hamburger_icon.open span {
       background: #333;
     }
@@ -255,9 +250,7 @@
     }
   }
 
-  ///// tuto
-  /// 
-  /// /* Sidenav menu */
+ 
 .sidenav {
     height: 356px;
     width: 100%;
@@ -267,12 +260,12 @@
     bottom: 0;
     right: 0;
     left: 0;
-    //background-color: #e8e8e8;
+
     padding-top: 80px;
     transition: top 1.2s ease;
   }
   
-  /* Sidenav menu links */
+
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -292,20 +285,19 @@
     margin: 0;
   }
   
-  /* Active class */
+
   .sidenav.active {
     top: 0px;
   }
   
-  /* Close btn */
+
   .sidenav .close {
     position: absolute;
-    //top: 0;
+
     right: 25px;
     font-size: 36px;
   }
   
-  /* Icône burger */
   .burger-icon span {
     display: block;
     width: 35px;

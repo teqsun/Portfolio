@@ -1,5 +1,3 @@
-
-//defilement horizontale
 function defilImgHrz(el,srcs,pas,tps) {
     if(typeof el=="string") { el = document.getElementById(el); }
     var tps = tps || 50;

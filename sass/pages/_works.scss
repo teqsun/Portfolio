@@ -55,22 +55,7 @@
 .modal-wrapper.active {
 	display: flex;
 }
-/*
-.modal-wrapper2 {
-	overflow: auto;
-	width: 630px;
-	height: 670px;
-	max-width: calc(100vw -20px);
-	max-height: calc(100vh -20px);
-	border-radius: 12px;
-	padding: 20px;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	animation: slideFromTop .5s both;
 
-}
-*/
 .btn-close-modal {
 	color: black;
 	
@@ -138,13 +123,7 @@
 	display: flex;
     align-self: flex-start;
     flex-direction: column;
-/*
-	&::after {
-		content: url(../../img/icone/f-b.png);
-		display: inline-block;
-		height: 1em;
-		width: 1em;
-	} */
+
 }
 
 .flex-beetween{
@@ -196,7 +175,7 @@ figcaption h2 {
 }
 
 .portfolio-title {
-	//font-size: 48px;
+	
 	margin-bottom: auto;
 	text-align: center;
 	}

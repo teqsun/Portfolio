@@ -1,5 +1,3 @@
-
-//new test modal
 const portfolioContainer = document.querySelector('.portfolio-items')
 
 portfolioContainer.addEventListener('click', e => {
