@@ -60,6 +60,7 @@
     font-size: 15px;
     line-height: 1.5;
     color: #666;
+    resize: vertical;
 }
 
 input.input-design{
@@ -78,6 +79,10 @@ input.input-design{
     line-height: 1.2;
     text-align: left;
     padding-bottom: 36px;
+}
+
+textarea{
+    resize: vertical;
 }
 
 textarea.input-design{

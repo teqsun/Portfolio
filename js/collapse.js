@@ -1,3 +1,5 @@
+//Animation pour la barre nav
+
 var sidenav = document.getElementById("mySidenav");
 var openBtn = document.getElementById("topnav_hamburger_icon");
 
@@ -11,3 +13,4 @@ openBtn.addEventListener('click', function(){
         
     }
 })
+

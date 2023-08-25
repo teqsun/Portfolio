@@ -9,13 +9,13 @@
 }
 
 @keyframes slideFromTop {
-	from { transform: translateY(-50px);}
+	from { transform: translateY(-80px);}
 	to { transform: translateY(0px);}
 }
 
 @keyframes slideBackTop {
 	from { transform: translateY(0px);}
-	to { transform: translateY(-50px);}
+	to { transform: translateY(-80px);}
 }
 
 .format-card-work {
@@ -85,30 +85,45 @@
 	border-radius: 25px;
     position: relative;
     flex: 0 0 auto;
+	left: 0;
+	
     overflow: hidden;
+	
+	animation: fadeIn ease-in-out 0.5s,slideFromTop ease-in-out 0.5s;
+
+	
     width: 45%;
     box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.4);
     margin: 1.1em 1.1em;
+	&.hide{
+	
+		animation: fadeOut ease-in-out 0.5s,slideBackTop ease-in-out 0.5s;
+		left: 100%;
+		
+	}
  figcaption {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 100%;
-	
+	//opacity: 0;
 	padding-left: 0;
 	background:  rgba(132, 106, 221, 0.8);
 	color: white;
 	display: flex;
 	text-align: left;
+	animation: fadeOut ease-in-out 0.5s;
 	flex-direction: column;
-	transition: left ease-in-out 350ms;
+	transition: left cubic-bezier(0.35, 0.49, 0.53, 0.98) 450ms;
 	
  }
  &:focus figcaption,
  &:hover figcaption{
 	cursor: pointer;
 	left: 0;
+	//opacity: 1;
+	animation: fadeIn ease-in-out 0.5s;
  }
 }
 
@@ -246,7 +261,7 @@ figcaption h2 {
 
 .portfolio-items {
 	display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
 }
@@ -267,6 +282,11 @@ figcaption h2 {
 	background-color: transparent;
 	color: rgba(132, 106, 221, 0.8);
 	cursor: pointer;
+	&:hover{
+		box-shadow:  0 0 3em rgba(132, 106, 221, 0.8);
+		
+		opacity: 0.8;
+	}
 }
 #filtres {
 	display: flex;

@@ -32,12 +32,12 @@ btnWeb.addEventListener('click', (e)=>{
     projectFilter(e)
 
 })
-
+/*
 btnAll.addEventListener('click', (e)=>{
 
     projectFilter(e)
 
-})
+})*/
 
 btnIllu.addEventListener('click', (e)=>{
 
@@ -97,7 +97,7 @@ function  projectFilter(e) {
             worksOther.classList.remove('hide');
           });
     }
-
+/*
     if(e.target.id == "btnAll"){
         worksIllustrations.forEach((worksIllustration) => {
             worksIllustration.classList.remove('hide');
@@ -110,6 +110,6 @@ function  projectFilter(e) {
           worksOthers.forEach((worksOther) => {
             worksOther.classList.remove('hide');
           });
-    }
+    } */
     
 }

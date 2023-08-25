@@ -2,52 +2,7 @@
     cursor: pointer;
 }
 
-.arrow-descritpion.active {
-    position: relative;
-    opacity: 1;
-    visibility: visible;
 
-    animation: slide-in 1, 5s ease-in-out;
-    transform: translateY(0);
-    transition: 1s;
-
-}
-
-.arrow-descritpion.inactive {
-    position: relative;
-    opacity: 0;
-    visibility: hidden;
-
-    animation: slide-in 1, 5s ease-in-out;
-    transform: translateY(-100%);
-    transition: 1s;
-    margin-bottom: -40px;
-
-}
-
-.grey-fiche {
-    height: max-content;
-    background-color: #f6f6f6;
-    font-size: 1.3em;
-    padding: 0px 20px;
-    padding-bottom: 5px;
-    position: relative;
-    margin-top: 0px;
-    border-radius: 15px;
-
-}
-
-.bloc-about {
-    padding-top: 73px;
-    display: flex;
-    flex-direction: column;
-
-
-    .wibloc {
-        width: 80%;
-    }
-
-}
 
 .nav-format-burger {
     padding: 5px 0;
@@ -56,31 +11,11 @@
     font-weight: 500;
     cursor: pointer;
 }
-.nav-format-burger a{
-    text-decoration: none;
-    color: black;
-}
+
 
 .nav-format-burger ul{
     list-style: none;
  }
-
-
- .topnav {
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  .topnav_link {
-    color: white;
-    padding: 12px;
-    text-decoration: none;
-  }
-  .topnav_link:hover {
-    color: #0078b4;
-  }
-  
 
   #topnav_hamburger_icon,
   #topnav_responsive_menu {
@@ -179,7 +114,7 @@
       width: 100%;
       margin-bottom: 5px;
   
-      background: #ededed;
+      background: #000000;
       border-radius: 3px;
   
       z-index: 100;
@@ -225,7 +160,7 @@
       background: #333;
     }
   
-    /* the first span rotates 45° \ */
+    //animation span 1
     #topnav_hamburger_icon.open span:nth-child(1) {
       width: 110%;
       -webkit-transform: rotate(45deg);
@@ -234,13 +169,13 @@
       transform: rotate(45deg);
     }
   
-    /* the second span disappears */
+    //animation span 2
     #topnav_hamburger_icon.open span:nth-child(2) {
       width: 0%;
       opacity: 0;
     }
   
-    /* the last span rotates -45° / */
+     //animation span 3
     #topnav_hamburger_icon.open span:nth-child(3) {
       width: 110%;
       -webkit-transform: rotate(-45deg);
